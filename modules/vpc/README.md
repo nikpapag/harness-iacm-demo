@@ -1,4 +1,4 @@
-# Azure Private DNS Zone Module
+# Amazon Virtual Private Cloud Module
 
 This OpenTofu/Terraform module provisions an [Amazon Virtual Private Cloud] using the `aws` provider.
 
