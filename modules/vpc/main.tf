@@ -8,7 +8,7 @@ resource "aws_vpc" "harness_iacm_vpc" {
     enable_dns_hostnames = true
 
     tags = {
-        name  = ""${var.name}"
+        name  = "${var.name}"
         owner = "${var.tag_owner}"
         Name        = "${var.name}"
         Environment = "${var.environment}"
