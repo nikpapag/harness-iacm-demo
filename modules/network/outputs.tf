@@ -22,5 +22,5 @@ output "private_subnet_3" {
 }
 
 output "eks_security_group" {
-    value = "${aws_security_group.alb_security_group.id}"
+    value = "${aws_security_group.eks_nodes.id}"
 }
