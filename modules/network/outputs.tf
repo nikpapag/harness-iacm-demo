@@ -1,7 +1,3 @@
-output "vpc_cidr_block" {
-    value = "${aws_vpc.harness_workshop_prod.cidr_block}"
-}
-
 output "public_subnet_1" {
     value = "${aws_subnet.public_subnet_1.id}"
 }
