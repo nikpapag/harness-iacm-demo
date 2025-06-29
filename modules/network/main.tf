@@ -70,7 +70,7 @@ resource "aws_subnet" "private_subnet_2" {
 
 
 resource "aws_subnet" "private_subnet_3" {
-    cidr_block        = "${var.private_eks_subnet_3_cidr}"
+    cidr_block        = "${var.private_subnet_3_cidr}"
     vpc_id            = "${var.vpc_id}"
     availability_zone = "${var.region}c"
 
