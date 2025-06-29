@@ -25,6 +25,11 @@ module "eks" {
       subnet_ids     = ["${var.private_subnet_1}","${var.private_subnet_2}", "${var.private_subnet_3}"]
       iam_role_arn = "arn:aws:iam::759984737373:role/AWSServiceRoleForAmazonEKSNodegroup"
       security_group_ids = ["${var.security_group}"]
+    
+      launch_template = {
+        elastic_gpu_specifications       = null
+        elastic_inference_accelerator    = null
+      }
     }
   }
   tags = {
