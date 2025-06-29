@@ -45,3 +45,7 @@ variable "tag_owner" {
 variable "project" {
   description = "project identifier"
 }
+
+variable "security_group" {
+  description = "Security Group for the eks cluster"
+}
