@@ -50,3 +50,8 @@ variable "private_subnet_3_cidr" {
     default = "10.0.6.0/24"
     description = "CIDR Block for Private Subnet 3"
 }
+
+variable "internet_cidr_blocks" {
+    default = "0.0.0.0/0"
+}
+
