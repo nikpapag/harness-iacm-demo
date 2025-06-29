@@ -224,11 +224,6 @@ resource "aws_security_group" "alb_security_group" {
 
 }
 
-output "eks_security_group" {
-    value = "${aws_security_group.alb_security_group.id}"
-}
-
-
 
 # Security group for EKS nodes
 resource "aws_security_group" "eks_nodes" {
